@@ -35,7 +35,7 @@
         </div>
         <div class="main-login main-center">
             <form class="form-horizontal"  action="#" th:action="@{/updateStock}" th:object="${stockForUp}" method="POST">
-
+                <input type="hidden" th:field="*{id}">
                 <div class="form-group">
                     <label for="name" class="cols-sm-2 control-label">Name</label>
                     <div class="cols-sm-10">
