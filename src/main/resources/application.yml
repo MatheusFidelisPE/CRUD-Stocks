@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /stockSystem
+
+
+spring.main.allow-circular-references: true
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+  jpa:
+    show-sql: true
+    database-plataform: org.hibernate.dialect.PostegreSQLDialect
+    generate-ddl: true
+    hibenate:
+      ddl-studio: none
+      ddl-auto: update
+application:
+  description: Projeto criado para o bootcamp DIO - Santander
+  version: 1.0
