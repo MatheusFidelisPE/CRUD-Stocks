@@ -12,16 +12,15 @@ spring:
       matching-strategy: ant_path_matcher
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 123456
+    url: postgres://afttxngecatlae:e66b5ad6e182492d438686729ff8548fa17ace29eb623e45cb751d78031eaa93@ec2-18-215-111-67.compute-1.amazonaws.com:5432/d17sr0e6j5mtur
+    username: afttxngecatlae
+    password: e66b5ad6e182492d438686729ff8548fa17ace29eb623e45cb751d78031eaa93
   jpa:
     show-sql: true
     database-plataform: org.hibernate.dialect.PostegreSQLDialect
     generate-ddl: true
     hibenate:
       ddl-studio: none
-      ddl-auto: update
 application:
   description: Projeto criado para o bootcamp DIO - Santander
   version: 1.0
